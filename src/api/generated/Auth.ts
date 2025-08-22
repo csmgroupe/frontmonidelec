@@ -65,7 +65,7 @@ export class Auth<
    */
   authControllerLogin = (data: LoginDtoContract, params: RequestParams = {}) =>
     this.request<AuthControllerLoginDataContract, void>({
-      path: `/api/v1/auth/login`,
+      path: `https://app.mon-idelec.fr/api/v1/auth/login`,
       method: 'POST',
       body: data,
       type: ContentType.Json,
