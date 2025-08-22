@@ -158,7 +158,7 @@ export class Auth<
    */
   authControllerGetUser = (params: RequestParams = {}) =>
     this.request<AuthControllerGetUserDataContract, void>({
-      path: `/api/v1/auth/user`,
+      path: `https://app.mon-idelec.fr/api/v1/auth/user`,
       method: 'GET',
       secure: true,
       ...params,
